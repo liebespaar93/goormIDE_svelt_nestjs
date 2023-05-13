@@ -1,3 +1,7 @@
+<script>
+	//import "global.css"
+</script>
+
 <!DOCTYPE html>
 <html lang="ko">
   <head>
