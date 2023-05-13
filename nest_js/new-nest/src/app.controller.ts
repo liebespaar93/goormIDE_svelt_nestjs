@@ -1,9 +1,16 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Render } from '@nestjs/common';
 
 @Controller()
 export class AppController {
+	@Get('Home')
+	@Render('Home')
+	getHello() {
+	  return { message: 'NestJS ❤ Svelte' };
+	}
+
 	@Get()
-	Home() {
-		return "Home";
+	@Render('login')
+	gettset() {
+	  return { login_text: "login" };
 	}
 }
